@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-EN">
+<head>
+	<meta charset="UTF-8">
+	<meta content="minimal-ui, width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport" id="viewport-meta">
+	<title>World War</title>
+	<link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/pathfinding-browser.min.js"></script>
+	<script src="js/jgestures.js"></script>
+	<script src="js/jquery-svgpan.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/shipping.js"></script>
+	<script src="js/player.js"></script>
+	
+</head>
+<body>
+	<div id="info">
+		<div id='turn_info'>
+			<div id='turn_player_wrapper'>
+				<div id='turn_player_head'>Turn: </div>
+				<div id='turn_player_name'></div>
+			</div>
+			<div id='turn_moves_wrapper'>
+				<div id='turn_moves_head'>Moves:</div>
+				<div id='turn_moves_count'></div>
+			</div>
+		</div>
+		<div id="attack_wrapper">
+			<button id="attack">Attack!</button>
+			<button id="ship_army">Ship army</button>
+			<div id="attack_text"></div>
+			<!--<button id="attack_select_enemy">Select Enemy</button>
+			<button id="attack_select_forces">Select Forces</button> -->
+			<button id="battle">Battle!</button>
+			<button id="end_turn">End Turn</button>
+			<button id="select_castle">Select castle</button>
+			<button id="pass">Pass</button>
+		</div>		
+		<div id="reset_pos_wrapper">
+			<button id="reset_map_position">Reset Map Position</button>
+		</div>
+	</div>
+	<div id="map"></div>
+</body>
+</html>

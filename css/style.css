@@ -1,0 +1,190 @@
+body{
+	height:100%;
+	padding:0;
+	margin:0;
+	font-family:arial;
+	font-size:12px;
+}
+
+#map_wrapper{
+	width:100%;
+	height:100%;
+}
+
+#map{
+	width: 90%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#map svg{
+
+}
+
+#map svg rect{
+	width:0.4;
+	height:0.4;
+}
+
+#select_map_wrapper{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 120px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 2222;
+	position: absolute;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+}
+
+#get_players{
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 100;
+	width: 500px;
+	height: 500px;
+	position: fixed;
+	left: 50%;
+	top: 50px;
+	margin-left: -250px;
+}
+
+#info{
+	height: 100%;
+	width: 10%;
+	border-right: 1px solid #eee;
+	position: fixed;
+	z-index: 2222;
+	background-color: rgba(255,255,255,0.9);
+	font-size:11px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease-in-out;
+	-webkit-transform-origin: 0 100%;
+}
+
+#players_info{
+	padding: 10px 10px 10px 10px;
+	clear:both;
+}
+
+.player_info{
+	padding: 0 0 10px 0;
+	clear: both;
+	height: 10px;
+	position: absolute;
+	width: 95%;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+}
+
+.player_color,.player_name,#turn_player_wrapper,#turn_player_head,#turn_player_name,#turn_moves_wrapper,#turn_moves_head,#turn_moves_count{
+	float:left;
+}
+
+.player_color{
+	margin: 2px 3px 0 0;
+	border: 1px solid black;
+}
+
+.player_name{
+	margin: 2px 3px 0 0;
+}
+
+.player_land{
+	float:left;
+	margin: 2px 0 0 0;
+}
+
+#turn_info{
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.player_info.active{
+	background-color: rgba(191,234,255,0.5);
+}
+
+#turn_player{
+	float:left;
+}
+
+#turn_moves_head{
+	margin:0 3px;
+}
+
+#turn_player_name{
+	margin:0 0 0 3px;
+}
+
+/* == iPad/iPhone [portrait + landscape] == */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px), 
+@media only screen and (max-device-width: 480px) {
+	#info{
+		font-size:8px;
+	}
+}
+
+#reset_pos_wrapper,#attack_wrapper{
+    padding: 0 0 0 10px;
+}
+
+#attack_select_enemy,#attack_select_forces,#battle,#ship_army,#end_shipment,#select_castle{
+	display:none;
+}
+
+#attack_wrapper{
+	clear: both;
+	color:red;
+}
+
+#attack_wrapper button{
+	width: 100%;
+	height: 30px;
+	margin:3px 0;
+}
+
+
+#attack_wrapper button{
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+#attack_wrapper button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+#attack_wrapper button:active {
+	position:relative;
+	top:1px;
+}
